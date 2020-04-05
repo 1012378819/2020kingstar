@@ -112,7 +112,7 @@ class CaseOptimize: # 优化
 
 
 if __name__ == '__main__':
-    f = 'data_files\\apicases.xlsx'
+    f = 'common_file\\apicases.xlsx'
     r=ReadExcel(f,'sheet1')
     data=r.read_data_line()
     data1=r.read_data_obj()

@@ -1,5 +1,5 @@
 # f=open(r'C:\txt\somefile.txt')  #linux: '~/sometxt'
-file='data_files\data.txt'
+file= 'data.txt'
 f=open(file,'w') #默认模式为r，只读，还有a，appending，追加不覆盖，w是覆盖
 f.write("012345678")  #写
 f.seek(5) #
@@ -14,7 +14,7 @@ f.close()
 # with open('a.txt') as somefile:
 #     do_sth(somefile)
 
-file_s='data_files\s.txt'
+file_s= 's.txt'
 def A():
     f=open(file_s)
     while True:
@@ -48,5 +48,5 @@ def D():
 # D()
 
 # #py2.2版本后，文件对象可迭代
-for line in open('data_files\s.txt',encoding='utf-8'):
+for line in open('s.txt', encoding='utf-8'):
     print(line)

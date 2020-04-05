@@ -13,7 +13,7 @@
 # 1.1 xlrd读excel
 def excel_1():
     import xlrd
-    file = "data_files\excel_dxtest.xlsx"
+    file = "excel_dxtest.xlsx"
     book=xlrd.open_workbook(file)
     # sheet1=book.sheets()[1]
     sheetnum=book.nsheets # 有几个sheet页
@@ -70,13 +70,13 @@ def excel_openpyxl_1():
     sh['B3'] = 'B3cell'
     sh['C1']='中国馆'
     # 保存为一个xlsx格式的文件
-    wb.save(r'data_files\cases.xlsx')
+    wb.save(r'common_file\cases.xlsx')
 # excel_openpyxl_1()
 
 def excel_openpyxl_2():
     import openpyxl
     # 第一步：打开工作簿
-    wb = openpyxl.load_workbook(r'data_files\cases.xlsx')
+    wb = openpyxl.load_workbook(r'cases.xlsx')
     # 第二步：选取表单
     sh = wb['test_case']
     # 第三步：读取数据

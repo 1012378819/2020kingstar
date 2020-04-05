@@ -21,8 +21,8 @@ with open(r'.\grade.csv','w') as fp:
 result=list()
 with open(r'd:\grade.csv','r') as fp:
     lines=fp.readlines()
-    colnames=lines[0].strip().split(',')
+    col_names=lines[0].strip().split(',')
     for line in lines[1:]:
-        result.append(dict(zip(colnames,line.strip().split(','))))
+        result.append(dict(zip(col_names,line.strip().split(','))))
 
 print(result)
