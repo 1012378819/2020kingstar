@@ -1,0 +1,29 @@
+列出已安装的包:pip list or pip freeze
+在线安装:pip install <包名> 或 pip install -r requirements.txt
+ex:
+# 安装1.9版本的django: pip install django==1.9
+# 安装版本号大于等于1.9的django，注意有引号:pip install "django>=1.9"
+卸载包:pip uninstall <包名> 或 pip uninstall -r requirements.txt
+升级包:pip install -U <包名>
+升级pip: pip install -U pip
+搜索包:pip search <搜索关键字>
+查询可升级的包:pip list -o
+打包:pip wheel <包名>
+
+（迁移模块）
+导出Python环境安装包： pip freeze > requirements.txt 这条指令会在当前路径下生成一个mypackages.txt文件，其中包含了当前环境的所有的安装包（pip list 指令后显示的包）
+python 常用包导入： pip install -r requirements.txt
+批量卸载：pip uninstall -r package.txt
+
+改用国内镜像安装
+pip install -i http://pypi.douban.com/simple/ numpy
+pip install -i http://pypi.douban.com/simple/--trusted-host pypi.douban.com  #此参数“--trusted-host”表示信任，如果上一个提示不受信任，就使用这个
+
+清华大学：https://pypi.tuna.tsinghua.edu.cn/simple
+阿里云：http://mirrors.aliyun.com/pypi/simple/
+豆瓣：http://pypi.douban.com/simple/
+
+# 虚拟环境知识
+我们创建一个独立环境 virtualenv myenv
+然后进入myenv的Scripts文件夹中，输入activate来激活环境，
+退出虚拟环境deactivate

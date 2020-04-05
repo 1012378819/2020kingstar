@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>http请求页面</title>
+</head>
+<body>
+<center>
+<form action="cgi-bin/greeting.py" method="post">
+    租借申请编号：<input type="text" name="zjsqid" >
+    <br>
+    是否审批通过：
+    <input type="radio" name="ISApprove" value="approve" checked>approve
+    <input type="radio" name="ISApprove" value="unapprove">unapprove
+    <br>
+    <input type="submit" name="submit">
+</form>
+ </center>
+
+</body>
+</html>

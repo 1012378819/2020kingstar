@@ -1,0 +1,10 @@
+2020-03-15 20:59:32,980 - [log1.py --> line:30] - DEBUG: --my_log_debug--
+2020-03-15 20:59:32,981 - [log1.py --> line:31] - INFO: --my_log_info--
+2020-03-15 20:59:32,981 - [log1.py --> line:32] - WARNING: --my_log_warning--
+2020-03-15 20:59:32,981 - [log1.py --> line:33] - ERROR: --my_log_error
+2020-03-15 20:59:32,981 - [log1.py --> line:34] - CRITICAL: --my_log_critical
+2020-03-15 22:02:41,449 - [log1.py --> line:30] - DEBUG: --my_log_debug--
+2020-03-15 22:02:41,449 - [log1.py --> line:31] - INFO: --my_log_info--
+2020-03-15 22:02:41,449 - [log1.py --> line:32] - WARNING: --my_log_warning--
+2020-03-15 22:02:41,449 - [log1.py --> line:33] - ERROR: --my_log_error
+2020-03-15 22:02:41,450 - [log1.py --> line:34] - CRITICAL: --my_log_critical
