@@ -8,7 +8,7 @@ __author__ = 'pei.lu'
 grade=[
     {'name':'zangsan','python':100,'java':90,'C++':60},
     {'name':'wangwu','python':70,'java':60,'C++':60},
-    {'name':'lp','python':100,'java':100,'C++':100},
+    {'name':'lp','python':99,'java':100,'C++':100},
        ]
 
 # 写 csv文件
@@ -19,7 +19,7 @@ with open(r'.\grade.csv','w') as fp:
 
 # 读 csv文件
 result=list()
-with open(r'd:\grade.csv','r') as fp:
+with open(r'.\grade.csv','r') as fp:
     lines=fp.readlines()
     col_names=lines[0].strip().split(',')
     for line in lines[1:]:
