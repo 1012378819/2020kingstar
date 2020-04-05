@@ -40,7 +40,7 @@ suite.addTest(TestAdd("test_add"))
 suite.addTest(TestAdd("test_add2"))
 suite.addTest(TestSub("test_sub"))
 suite.addTest(TestSub("test_sub2"))
-test_dir= r"C:\Users\pei.lu.KINGSTAR\eclipse-workspace\new_2020\src\utest"
+test_dir= r"/utest"
 discover= unittest.defaultTestLoader.discover(test_dir, pattern='test.py')
 
 #suite1=unittest.TestSuite(unittest_learn.makeSuite(TestAdd))
