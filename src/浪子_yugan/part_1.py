@@ -373,7 +373,15 @@ def set1():
     
 # set1()
 
+import collections
 
+content=collections.OrderedDict() # 有序字典，可记住键值对的添加顺序
+content['name']='zhangsan'
+content['age']=20
+content['male']='yes'
+content['hobby']='piano'
+print(content)
+print(type(content))
 
 
 

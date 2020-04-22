@@ -26,6 +26,7 @@ ft="%(asctime)s - [%(filename)s --> line:%(lineno)d] - %(levelname)s: %(message)
 ft=logging.Formatter(ft)
 l_s.setFormatter(ft)
 l_f.setFormatter(ft)
+
 # 日志输出
 my_log.debug("--my_log_debug--")
 my_log.info("--my_log_info--")

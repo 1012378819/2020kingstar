@@ -186,3 +186,18 @@ print(r.send("hello,world!"))
 print(r.__next__())
 
 
+def drange(start,stop,step):
+    x = start
+    while x< stop:
+        yield x
+        x += step
+
+for x in drange(10,20,0.5):
+    print(x)
+
+def reverse(data):
+    for x in range(len(data)-1,-1,-1):
+        yield data[x]
+
+for x in reverse('gold'):
+    print(x)
