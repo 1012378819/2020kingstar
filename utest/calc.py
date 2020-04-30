@@ -1,7 +1,6 @@
 #coding:utf-8
 import unittest
 import requests
-# from ddt import data, unpack, ddt
 import ddt
 
 class MyTest(unittest.TestCase):
